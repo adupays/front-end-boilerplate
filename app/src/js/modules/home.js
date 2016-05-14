@@ -1,6 +1,7 @@
 'use strict'
 
 import React, { Component, PropTypes} from 'react'
+import { Link } from 'react-router'
 import $ from 'jquery'
 
 class Home extends Component {

@@ -15,6 +15,27 @@ render((
           })
         }
       } />
+      <Route path="assets" getComponent={
+        (location, callback) => {
+          require.ensure([], function (require) {
+            callback(null, require('../modules/assets/assets').default)
+          })
+        }
+      } />
+      <Route path="asset/create" getComponent={
+        (location, callback) => {
+          require.ensure([], function (require) {
+            callback(null, require('../modules/assets/create').default)
+          })
+        }
+      } />
+      <Route path="asset/edit/:id" getComponent={
+        (location, callback) => {
+          require.ensure([], function (require) {
+            callback(null, require('../modules/assets/edit').default)
+          })
+        }
+      } />
     </Route>
-  </Router>),
-  document.getElementById('container'))
+  </Router>
+), document.getElementById('container'))
