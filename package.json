@@ -7,13 +7,12 @@
     "url": ""
   },
   "scripts": {
-    "prod-css": "./node_modules/.bin/gulp prod",
-    "dev-css": "./node_modules/.bin/gulp dev",
+    "css-dev": "./node_modules/.bin/gulp dev",
+    "css-build": "./node_modules/.bin/gulp prod",
     "watch": "./node_modules/.bin/gulp watch",
-    "watch-dev-js": "./node_modules/.bin/webpack-dev-server --config ./webpack.config.js --progress --colors --hot --inline --devtool=eval",
-    "build-dev-js": "./node_modules/.bin/webpack --config ./webpack.config.js -d --progress --colors",
-    "watch-prod-js": "./node_modules/.bin/webpack --config ./webpack.config.js -p --watch",
-    "build-prod-js": "./node_modules/.bin/webpack --config ./webpack.config.js -p",
+    "start": "./node_modules/.bin/webpack-dev-server --config ./webpack.config.js --progress --colors --hot --inline --devtool=eval",
+    "build-dev": "./node_modules/.bin/webpack --config ./webpack.config.js -d --progress --colors",
+    "build": "./node_modules/.bin/webpack --config ./webpack.config.js -p",
     "eslint": "eslint -c .eslintrc ./src/js/"
   },
   "devDependencies": {

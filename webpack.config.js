@@ -5,7 +5,7 @@ var path = require('path')
 
 module.exports = {
   entry: {
-    app: ['./src/js/entries/app.js'],
+    app: ['./app/src/js/entries/app.js'],
     vendor: ['jquery', 'lodash', 'react', 'bootstrap']
   },
   output: {

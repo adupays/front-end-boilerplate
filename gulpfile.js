@@ -8,7 +8,7 @@ var less = require('gulp-less');
 var cleanCSS = require('gulp-clean-css');
 var sourcemaps = require('gulp-sourcemaps');
 
-var CSS = 'src/css/**/*';
+var CSS = 'app/src/css/**/*';
 var CSS_DEST = 'build/';
 
 function onError(err) {
